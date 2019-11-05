@@ -11,9 +11,9 @@ namespace Arreglos
         static void Main(string[] args)
         {
             Console.WriteLine("Bienvenido. Tenemos una serie de ejercicios a realizar. \n"
-                + " 1) Escribir un programa que llene un arreglo con los números enteros comprendidos entre 4 y 14. \n"
-                + " 2) Escribir un programa que llene un arreglo con los números pares comprendidos entre 1 y 100. \n"
-                + " 3) Escribir un programa que llene un arreglo con los números comprendidos entre 0 y 100 divisibles por 3. \n"
+                + " 1) Programa que llene un arreglo con los números enteros comprendidos entre 4 y 14. \n"
+                + " 2) Programa que llene un arreglo con los números pares comprendidos entre 1 y 100. \n"
+                + " 3) Programa que llene un arreglo con los números comprendidos entre 0 y 100 divisibles por 3. \n"
                 + " 4) Escribir un programa que llene un arreglo de 10 números enteros aleatorios comprendidos entre 50 y 100, "
                 + "copie en otro arreglo esos números multiplicados por 0,5 y muestre ambos arreglos. \n"
                 + " 5) Escribir un programa que llene un arreglo con los veinte primeros números pares y calcule su suma. \n"
@@ -30,13 +30,13 @@ namespace Arreglos
                     Funsiones.ejercicio1();
                     break;
                 case 2:
-
+                    Funsiones.ejercicio2();
                     break;
                 case 3:
-
+                    Funsiones.ejercicio3();
                     break;
                 case 4:
-
+                    Funsiones.ejercicio4();
                     break;
                 case 5:
 

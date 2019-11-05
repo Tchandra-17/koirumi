@@ -18,5 +18,35 @@ namespace Arreglos
                 Console.WriteLine(array[i]);
             }
         }
+        public static void ejercicio2()
+        {
+            Console.WriteLine("\n******* Ejercicio 2 *******");
+            int[] array = new int[101];
+            for (int i=1; i <=100; i++)
+            {
+                array[i] = i;
+                if (array[i] % 2 == 0)
+                {
+                    Console.WriteLine(array[i]);
+                }
+            }
+        }
+        public static void ejercicio3()
+        {
+            Console.WriteLine("\n******* Ejercicio 3 *******");
+            int[] array = new int[102];
+            for (int i = 0; i <= 100; i++)
+            {
+                array[i] = i;
+                if (array[i] % 3 == 0)
+                {
+                    Console.WriteLine(array[i]);
+                }
+            }
+        }
+        public static void ejercicio4()
+        {
+
+        }
     }
 }
