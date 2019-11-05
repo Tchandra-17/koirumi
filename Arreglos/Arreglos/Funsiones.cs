@@ -11,15 +11,11 @@ namespace Arreglos
         public static void ejercicio1()
         {
             Console.WriteLine("\n******* Ejercicio 1 *******");
-            int numeros;
-            int[] array = new int[numeros];
-            for (int i=0; i<=14; i++)
+            int[] array = new int [15];
+            for (int i=4; i<=14; i++)
             {
-                if (i >= 4)
-                {
-                    array[i] = i;
-                    Console.WriteLine(array[i]);
-                }
+                array[i] = i;
+                Console.WriteLine(array[i]);
             }
         }
     }
