@@ -46,7 +46,13 @@ namespace Arreglos
         }
         public static void ejercicio4()
         {
-
+            Console.WriteLine("\n******* Ejercicio 4 *******");
+            int[] n_al = new int[10];
+            int[] n_m = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                
+            }
         }
     }
 }
