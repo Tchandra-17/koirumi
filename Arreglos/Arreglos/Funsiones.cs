@@ -11,8 +11,8 @@ namespace Arreglos
         public static void ejercicio1()
         {
             Console.WriteLine("\n******* Ejercicio 1 *******");
-            int[] array = new int [15];
-            for (int i=4; i<=14; i++)
+            int[] array = new int[15];
+            for (int i = 4; i <= 14; i++)
             {
                 array[i] = i;
                 Console.WriteLine(array[i]);
@@ -22,7 +22,7 @@ namespace Arreglos
         {
             Console.WriteLine("\n******* Ejercicio 2 *******");
             int[] array = new int[101];
-            for (int i=1; i <=100; i++)
+            for (int i = 1; i <= 100; i++)
             {
                 array[i] = i;
                 if (array[i] % 2 == 0)
@@ -58,6 +58,22 @@ namespace Arreglos
             }
         }
         public static int ejercicio5()
+        {
+            Console.WriteLine("\n******* Ejercicio 5 *******");
+            int suma = 0;
+            int[] numeros = new int[41];
+            for (int i = 1; i <= 40; i++)
+            {
+                numeros[i] = i;
+                if (numeros[i] % 2 == 0)
+                {
+                    Console.WriteLine(numeros[i]);
+                    suma = suma + numeros[i];
+                }
+            }
+            return suma;
+        }
+        public static void ejercicio6()
         {
 
         }

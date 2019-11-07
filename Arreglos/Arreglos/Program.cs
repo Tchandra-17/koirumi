@@ -39,10 +39,11 @@ namespace Arreglos
                     Funsiones.ejercicio4();
                     break;
                 case 5:
-                    Funsiones.ejercicio5();
+                    int suma = Funsiones.ejercicio5();
+                    Console.WriteLine("La suma de los primeros 20 números es " + suma);
                     break;
                 case 6:
-
+                    Funsiones.ejercicio6();
                     break;
                 case 7:
 
