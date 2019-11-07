@@ -75,7 +75,7 @@ namespace Arreglos
         }
         public static void ejercicio6()
         {
-            Console.WriteLine("\n******* Ejercicio 5 *******");
+            Console.WriteLine("\n******* Ejercicio 6 *******");
             int[] numeros = new int[5];
             int suma = 0;
             double media;
@@ -89,6 +89,33 @@ namespace Arreglos
             Console.WriteLine("La media aritmetica es: " + media);
         }
         public static void ejercicio7()
+        {
+            Console.WriteLine("\n******* Ejercicio 7 *******");
+            int suma_p = 0, suma_n = 0;
+            int[] numeros = new int[7] ;
+            numeros[0] = -2;
+            numeros[1] = 5;
+            numeros[2] = 8;
+            numeros[3] = -9;
+            numeros[4] = 10;
+            numeros[5] = 15;
+            numeros[6] = -4;
+            for (int i = 0; i < 7; i++)
+            {
+                Console.WriteLine(numeros[i]);
+                if (numeros[i] < 0)
+                {
+                    suma_n = suma_n + numeros[i];
+                }
+                else
+                {
+                    suma_p = suma_p + numeros[i];
+                }
+            }
+            Console.WriteLine("La suma de los positivos es " + suma_p);
+            Console.WriteLine("La suma de los negativos es " + suma_n);
+        }
+        public static void ejercicio8()
         {
 
         }

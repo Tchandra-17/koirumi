@@ -49,7 +49,7 @@ namespace Arreglos
                     Funsiones.ejercicio7();
                     break;
                 case 8:
-
+                    Funsiones.ejercicio8();
                     break;
                 case 9:
 
