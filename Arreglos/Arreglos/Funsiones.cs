@@ -48,11 +48,18 @@ namespace Arreglos
         {
             Console.WriteLine("\n******* Ejercicio 4 *******");
             int[] n_al = new int[10];
-            int[] n_m = new int[10];
+            double[] n_m = new double[10];
+            Random aleatorios = new Random();
             for (int i = 0; i < 10; i++)
             {
-                
+                n_al[i] = aleatorios.Next(50, 100);
+                n_m[i] = n_al[i] * 0.5;
+                Console.WriteLine(n_al[i] + "\t" + n_m[i]);
             }
+        }
+        public static int ejercicio5()
+        {
+
         }
     }
 }
