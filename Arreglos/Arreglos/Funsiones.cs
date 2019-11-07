@@ -85,14 +85,14 @@ namespace Arreglos
                 numeros[i] = int.Parse(Console.ReadLine());
                 suma = suma + numeros[i];
             }
-            media = (double) suma / 5;
+            media = (double)suma / 5;
             Console.WriteLine("La media aritmetica es: " + media);
         }
         public static void ejercicio7()
         {
             Console.WriteLine("\n******* Ejercicio 7 *******");
             int suma_p = 0, suma_n = 0;
-            int[] numeros = new int[7] ;
+            int[] numeros = new int[7];
             numeros[0] = -2;
             numeros[1] = 5;
             numeros[2] = 8;
@@ -117,7 +117,48 @@ namespace Arreglos
         }
         public static void ejercicio8()
         {
+            Console.WriteLine("\n******* Ejercicio 8 *******");
+            string cadena;
+            int i = 0;
 
+            // guardamos las vocales en un array de enteros
+            int[] vocales = new int[5];
+            vocales[0] = 0;
+            vocales[1] = 0;
+            vocales[2] = 0;
+            vocales[3] = 0;
+            vocales[4] = 0;
+
+            Console.WriteLine("Introduce un texto:");
+            cadena = Console.ReadLine();
+
+            // recorremos cada uno de los caracteres en busca de las vocales
+            for (i = 1; i < cadena.Length; i++)
+            {
+                switch (cadena.ToUpper())
+                {
+                    case "a":
+                        vocales[0] += vocales[0] + 1;
+                        break;
+                    case "e":
+                        vocales[1] += vocales[1] + 1;
+                        break;
+                    case "i":
+                        vocales[2] += vocales[2] + 1;
+                        break;
+                    case "o":
+                        vocales[3] += vocales[3] + 1;
+                        break;
+                    case "u":
+                        vocales[4] += vocales[4] + 1;
+                        break;
+                }
+            }
+            Console.WriteLine("Existen " + vocales[0] + " vocales A");
+            Console.WriteLine("Existen " + vocales[1] + " vocales E");
+            Console.WriteLine("Existen " + vocales[2] + " vocales I");
+            Console.WriteLine("Existen " + vocales[3] + " vocales O");
+            Console.WriteLine("Existen " + vocales[4] + " vocales U");
         }
     }
 }
