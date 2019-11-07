@@ -75,6 +75,21 @@ namespace Arreglos
         }
         public static void ejercicio6()
         {
+            Console.WriteLine("\n******* Ejercicio 5 *******");
+            int[] numeros = new int[5];
+            int suma = 0;
+            double media;
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Dame un número:");
+                numeros[i] = int.Parse(Console.ReadLine());
+                suma = suma + numeros[i];
+            }
+            media = (double) suma / 5;
+            Console.WriteLine("La media aritmetica es: " + media);
+        }
+        public static void ejercicio7()
+        {
 
         }
     }
