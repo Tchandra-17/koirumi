@@ -13,13 +13,16 @@ namespace Arreglos
             Console.WriteLine("\n******* Ejercicio 1 *******");
             //Se crea un arreglo donde guardar los números
             int[] array = new int[11];
+            
             //Se crea un ciclo for para asignar el número del arreglo
             for (int i = 0; i < 11; i++)
             {
                 //Al valor del arreglo se le asigna el valor de i
                 //y se le suman 4 en cada repetición para conseguir
-                //los número deseados.
+                //los número deseados
                 array[i] = i + 4;
+                
+                //Se manda a imprimir el arreglo
                 Console.WriteLine(array[i]);
             }
         }
@@ -28,16 +31,19 @@ namespace Arreglos
             Console.WriteLine("\n******* Ejercicio 2 *******");
             //Se crea un arreglo donde guardar los números
             int[] array = new int[101];
+            
             //Se crea un ciclo for para asignar el número del arreglo
             for (int i = 1; i <= 100; i++)
             {
                 //Al valor del arreglo se le asigna el valor de i
                 array[i] = i;
+
                 //Se agraga un if con una condicion para saber si es
-                // divisible entre 2 y, por lo tanto, saber si es par
+                //divisible entre 2 hasta llegar a 0 y, por lo tanto,
+                //saber si es un número par
                 if (array[i] % 2 == 0)
                 {
-                    //En el caso de que si sea par, se manda a imprimir.
+                    //En el caso de que si sea par, se manda a imprimir
                     Console.WriteLine(array[i]);
                 }
             }
@@ -47,13 +53,15 @@ namespace Arreglos
             Console.WriteLine("\n******* Ejercicio 3 *******");
             //Se crea un arreglo donde guardar los números
             int[] array = new int[102];
+            
             //Se crea un ciclo for para asignar el número del arreglo
             for (int i = 0; i <= 100; i++)
             {
                 //Al valor del arreglo se le asigna el valor de i
                 array[i] = i;
+                
                 //Se agraga un if con una condicion para saber si es
-                // divisible entre 3
+                //divisible entre 3 hasta llegar a 0
                 if (array[i] % 3 == 0)
                 {
                     //En el caso de que si se cumpla la condició,
@@ -65,46 +73,94 @@ namespace Arreglos
         public static void ejercicio4()
         {
             Console.WriteLine("\n******* Ejercicio 4 *******");
+            //Se crea un arreglo donde guardar los números aleatorios
             int[] n_al = new int[10];
+            
+            //Se crea un arreglo donde guardar los números
+            //resultantes de los aleatorios multiplicados por 0.5
             double[] n_m = new double[10];
+            
+            //Se crea un random
             Random aleatorios = new Random();
+            
+            //Se crea un ciclo for para asignar el número de los arreglos
             for (int i = 0; i < 10; i++)
             {
+                //Al valor del arreglo se le asigna un número aleatorio
+                //en el rango de 50 a 100
                 n_al[i] = aleatorios.Next(50, 100);
+
+                //Al valor del arreglo se le asigna el resultado del 
+                //número aleatorio por 0.5
                 n_m[i] = n_al[i] * 0.5;
+
+                //Se mandan a imprimir ambos arreglos
                 Console.WriteLine(n_al[i] + "\t" + n_m[i]);
             }
         }
-        public static int ejercicio5()
+        public static void ejercicio5()
         {
             Console.WriteLine("\n******* Ejercicio 5 *******");
+            //Se crea un contador de números enteros con el
+            //nombre de suma y un valor de 0
             int suma = 0;
+
+            //Se crea un arreglo donde guardar los números
             int[] numeros = new int[41];
+
+            //Se crea un ciclo for para asignar el número de los arreglos
             for (int i = 1; i <= 40; i++)
             {
+                //Al valor del arreglo se le asigna el valor de i
                 numeros[i] = i;
+
+                //Se agraga un if con una condicion para saber si es
+                //divisible entre 2 hasta llegar a 0 y, por lo tanto,
+                //saber si es un número par
                 if (numeros[i] % 2 == 0)
                 {
+                    //En el caso de que si sea par, se manda a imprimir
                     Console.WriteLine(numeros[i]);
+
+                    //Se le suma al cantador el valor del arreglo que
+                    //cumple la condición para tener la suma total de
+                    //estos hasta que se acabe el ciclo
                     suma = suma + numeros[i];
                 }
             }
+            //Se manda a imprimir un mensaje y el valor del contador al
+            //finalizar el ciclo
             Console.WriteLine("La suma de los primeros 20 números es " + suma);
-            return suma;
         }
         public static void ejercicio6()
         {
             Console.WriteLine("\n******* Ejercicio 6 *******");
+            //Se crea un arreglo donde guardar los números
             int[] numeros = new int[5];
+
+            //Se crea un contador de números enteros con el
+            //nombre de suma y un valor de 0
             int suma = 0;
+
+
             double media;
+
+
             for (int i = 0; i < 5; i++)
             {
+
                 Console.WriteLine("Dame un número:");
+
+
                 numeros[i] = int.Parse(Console.ReadLine());
+
+
                 suma = suma + numeros[i];
             }
+
             media = (double)suma / 5;
+
+
             Console.WriteLine("La media aritmetica es: " + media);
         }
         public static void ejercicio7()
