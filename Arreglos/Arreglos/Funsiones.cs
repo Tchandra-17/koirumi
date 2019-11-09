@@ -71,6 +71,7 @@ namespace Arreglos
                     suma = suma + numeros[i];
                 }
             }
+            Console.WriteLine("La suma de los primeros 20 números es " + suma);
             return suma;
         }
         public static void ejercicio6()
@@ -118,47 +119,24 @@ namespace Arreglos
         public static void ejercicio8()
         {
             Console.WriteLine("\n******* Ejercicio 8 *******");
-            string cadena;
-            int i = 0;
-
-            // guardamos las vocales en un array de enteros
-            int[] vocales = new int[5];
-            vocales[0] = 0;
-            vocales[1] = 0;
-            vocales[2] = 0;
-            vocales[3] = 0;
-            vocales[4] = 0;
-
-            Console.WriteLine("Introduce un texto:");
-            cadena = Console.ReadLine();
-
-            // recorremos cada uno de los caracteres en busca de las vocales
-            for (i = 1; i < cadena.Length; i++)
+            string frase;
+            int vocales = 0;
+            Console.WriteLine("Introduce una frase:");
+            frase = Console.ReadLine();
+            int[] letras = new int[frase.Length];
+            for (int i = 0; i < frase.Length; i++)
             {
-                switch (cadena.ToUpper())
+                letras[i] = frase[i];
+                if ((letras[i] == 'a') || (letras[i] == 'e') || (letras[i] == 'i') || (letras[i] == 'o') || (letras[i] == 'u'))
                 {
-                    case "a":
-                        vocales[0] += vocales[0] + 1;
-                        break;
-                    case "e":
-                        vocales[1] += vocales[1] + 1;
-                        break;
-                    case "i":
-                        vocales[2] += vocales[2] + 1;
-                        break;
-                    case "o":
-                        vocales[3] += vocales[3] + 1;
-                        break;
-                    case "u":
-                        vocales[4] += vocales[4] + 1;
-                        break;
+                    vocales = vocales + 1;
+                }
+                else if ((letras[i] == 'A') || (letras[i] == 'E') || (letras[i] == 'I') || (letras[i] == 'O') || (letras[i] == 'U'))
+                {
+                    vocales = vocales + 1;
                 }
             }
-            Console.WriteLine("Existen " + vocales[0] + " vocales A");
-            Console.WriteLine("Existen " + vocales[1] + " vocales E");
-            Console.WriteLine("Existen " + vocales[2] + " vocales I");
-            Console.WriteLine("Existen " + vocales[3] + " vocales O");
-            Console.WriteLine("Existen " + vocales[4] + " vocales U");
+            Console.WriteLine("Su frase tiene " + vocales + " vocales.");
         }
     }
 }
