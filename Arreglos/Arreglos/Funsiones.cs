@@ -11,10 +11,14 @@ namespace Arreglos
         public static void ejercicio1()
         {
             Console.WriteLine("\n******* Ejercicio 1 *******");
-            //Cre
+            //Se crea un arreglo donde guardar los números
             int[] array = new int[11];
+            //Se crea un ciclo for para asignar el número del arreglo
             for (int i = 0; i < 11; i++)
             {
+                //Al valor del arreglo se le asigna el valor de i
+                //y se le suman 4 en cada repetición para conseguir
+                //los número deseados.
                 array[i] = i + 4;
                 Console.WriteLine(array[i]);
             }
