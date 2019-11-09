@@ -37,47 +37,47 @@ namespace Arreglos
                 + "\t    de caracteres y nos diga si son idénticos o no. \n\n"
                 + "¿Cuál le gustaría realizar?");
             int opc = int.Parse(Console.ReadLine());
-            //Depende del número ingresado es la opcion que se mostrara.
+            //Depende del número ingresado es la opción que se mostrara.
             switch (opc)
             {
                 case 1:
-                    //Se manda a llamar a la funsión "ejercicio1" de la clase Funciones.
+                    //Se manda a llamar a la función "ejercicio1" de la clase Funciones.
                     Funsiones.ejercicio1();
                     break;
                 case 2:
-                    //Se manda a llamar a la funsión "ejercicio2" de la clase Funciones.
+                    //Se manda a llamar a la función "ejercicio2" de la clase Funciones.
                     Funsiones.ejercicio2();
                     break;
                 case 3:
-                    //Se manda a llamar a la funsión "ejercicio3" de la clase Funciones.
+                    //Se manda a llamar a la función "ejercicio3" de la clase Funciones.
                     Funsiones.ejercicio3();
                     break;
                 case 4:
-                    //Se manda a llamar a la funsión "ejercicio4" de la clase Funciones.
+                    //Se manda a llamar a la función "ejercicio4" de la clase Funciones.
                     Funsiones.ejercicio4();
                     break;
                 case 5:
-                    //Se manda a llamar a la funsión "ejercicio5" de la clase Funciones.
+                    //Se manda a llamar a la función "ejercicio5" de la clase Funciones.
                     Funsiones.ejercicio5();
                     break;
                 case 6:
-                    //Se manda a llamar a la funsión "ejercicio6" de la clase Funciones.
+                    //Se manda a llamar a la función "ejercicio6" de la clase Funciones.
                     Funsiones.ejercicio6();
                     break;
                 case 7:
-                    //Se manda a llamar a la funsión "ejercicio7" de la clase Funciones.
+                    //Se manda a llamar a la función "ejercicio7" de la clase Funciones.
                     Funsiones.ejercicio7();
                     break;
                 case 8:
-                    //Se manda a llamar a la funsión "ejercicio8" de la clase Funciones.
+                    //Se manda a llamar a la función "ejercicio8" de la clase Funciones.
                     Funsiones.ejercicio8();
                     break;
                 case 9:
-                    //Se manda a llamar a la funsión "ejercicio9" de la clase Funciones.
+                    //Se manda a llamar a la función "ejercicio9" de la clase Funciones.
                     Funsiones.ejercicio9();
                     break;
                 default:
-                    //Se manda a llamar a la funsión "otra_opcion" de la clase Funciones.
+                    //Se manda a llamar a la función "otra_opcion" de la clase Funciones.
                     Funsiones.otra_opcion();
                     break;
             }

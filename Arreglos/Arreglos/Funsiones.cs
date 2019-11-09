@@ -26,12 +26,18 @@ namespace Arreglos
         public static void ejercicio2()
         {
             Console.WriteLine("\n******* Ejercicio 2 *******");
+            //Se crea un arreglo donde guardar los números
             int[] array = new int[101];
+            //Se crea un ciclo for para asignar el número del arreglo
             for (int i = 1; i <= 100; i++)
             {
+                //Al valor del arreglo se le asigna el valor de i
                 array[i] = i;
+                //Se agraga un if con una condicion para saber si es
+                // divisible entre 2 y, por lo tanto, saber si es par
                 if (array[i] % 2 == 0)
                 {
+                    //En el caso de que si sea par, se manda a imprimir.
                     Console.WriteLine(array[i]);
                 }
             }
