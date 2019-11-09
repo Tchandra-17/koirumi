@@ -45,12 +45,19 @@ namespace Arreglos
         public static void ejercicio3()
         {
             Console.WriteLine("\n******* Ejercicio 3 *******");
+            //Se crea un arreglo donde guardar los números
             int[] array = new int[102];
+            //Se crea un ciclo for para asignar el número del arreglo
             for (int i = 0; i <= 100; i++)
             {
+                //Al valor del arreglo se le asigna el valor de i
                 array[i] = i;
+                //Se agraga un if con una condicion para saber si es
+                // divisible entre 3
                 if (array[i] % 3 == 0)
                 {
+                    //En el caso de que si se cumpla la condició,
+                    //se manda a imprimir.
                     Console.WriteLine(array[i]);
                 }
             }
