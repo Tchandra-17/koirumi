@@ -32,7 +32,7 @@ namespace Arreglos
                 + "\t    positivos y negativos. \n"
                 + "\t 8) Decir el número de vocales que aparecen en una \n"
                 + "\t    frase introducida por el usuario. \n"
-                + "\t 9) Escribir un programa que compare dos arreglos \n"
+                + "\t 9) Programa que compare dos arreglos \n"
                 + "\t    de caracteres y nos diga si son idénticos o no. \n\n"
                 + "¿Cuál le gustaría realizar?");
             int opc = int.Parse(Console.ReadLine());
@@ -63,10 +63,10 @@ namespace Arreglos
                     Funsiones.ejercicio8();
                     break;
                 case 9:
-
+                    Funsiones.ejercicio9();
                     break;
                 default:
-
+                    Funsiones.otra_opcion();
                     break;
             }
             Console.ReadKey();

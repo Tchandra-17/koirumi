@@ -11,10 +11,11 @@ namespace Arreglos
         public static void ejercicio1()
         {
             Console.WriteLine("\n******* Ejercicio 1 *******");
-            int[] array = new int[15];
-            for (int i = 4; i <= 14; i++)
+            //Cre
+            int[] array = new int[11];
+            for (int i = 0; i < 11; i++)
             {
-                array[i] = i;
+                array[i] = i + 4;
                 Console.WriteLine(array[i]);
             }
         }
@@ -137,6 +138,45 @@ namespace Arreglos
                 }
             }
             Console.WriteLine("Su frase tiene " + vocales + " vocales.");
+        }
+        public static void ejercicio9()
+        {
+            Console.WriteLine("\n******* Ejercicio 9 *******");
+            string texto1, texto2;
+            int cont = 0;
+            Console.WriteLine("Introduce el primer texto:");
+            texto1 = Console.ReadLine();
+            int[] letras_t1 = new int[texto1.Length];
+            Console.WriteLine("Introduce el segundo texto:");
+            texto2 = Console.ReadLine();
+            int[] letras_t2 = new int[texto2.Length];
+            if (texto1.Length == texto2.Length)
+            {
+                for (int i = 0; i < texto1.Length; i++)
+                {
+                    letras_t2[i] = texto2[i];
+                    letras_t1[i] = texto1[i];
+                    if (letras_t1[i] == letras_t2[i])
+                    {
+                        cont = cont + 1;
+                    }
+                }
+                if (cont == texto1.Length)
+                {
+                    Console.WriteLine("La frase es la misma.");
+                }
+                else
+                {
+                    Console.WriteLine("La frase no es la misma.");
+                }
+            }
+        }
+        public static void otra_opcion()
+        {
+            //Abre una nueva ventana donde iniciar otra vez el programa.
+            System.Diagnostics.Process.Start(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            //Cierra el programa actual.
+            Environment.Exit(0);
         }
     }
 }
