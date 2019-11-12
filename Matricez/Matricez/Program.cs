@@ -23,24 +23,31 @@ namespace Matricez
             switch (opc)
             {
                 case 1:
+                    Console.Clear();
                     Matricez.ejercicio1();
                     break;
                 case 2:
+                    Console.Clear();
                     Matricez.ejercicio2();
                     break;
                 case 3:
+                    Console.Clear();
                     Matricez.ejercicio3();
                     break;
                 case 4:
+                    Console.Clear();
                     Matricez.ejercicio4();
                     break;
                 case 5:
+                    Console.Clear();
                     Matricez.ejercicio5();
                     break;
                 case 6:
+                    Console.Clear();
                     Matricez.ejercicio6();
                     break;
                 default:
+                    Console.Clear();
                     Matricez.otra_opcion();
                     break;
             }
