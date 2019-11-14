@@ -17,7 +17,7 @@ namespace Matricez
             for (int i = 0; i < 4; i++)
             {
                 int suma = 0;
-                Console.WriteLine("\nIngrese el nombre del empleado:");
+                Console.WriteLine("\nIngrese el nombre del empleado " + (i + 1) + ":");
                 empleados[i] = Console.ReadLine();
                 for (int j = 0; j < 3; j++)
                 {
@@ -29,21 +29,80 @@ namespace Matricez
             }
             int mayor = total[0];
             string nombre = empleados[0];
-            Console.WriteLine("\nTotal de sueldos pagados por empleado:");
+            Console.WriteLine("\n***\t Total de sueldos pagados por empleado en los ultimos 3 meses \t***");
+            Console.WriteLine("Empleado:\t" + "1er mes \t" + "2do mes \t" + "3er mes \t" + "Total \n");
             for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine(empleados[i] + "\t\t" + total[i]);
+                Console.Write(empleados[i] + "\t\t");
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write(sueldos[i,j]  + "\t\t");
+                }
+                Console.WriteLine(total[i] + "\n");
                 if (total[i] > mayor)
                 {
                     mayor = total[i];
                     nombre = empleados[i];
                 }
             }
-            Console.WriteLine("El empleado con mayor sueldo es " + nombre + ", con un sueldo de " + mayor);
+            Console.WriteLine("\nEl empleado con mayor sueldo es " + nombre + ", con un sueldo de " + mayor);
+            Console.WriteLine("\n\nEscriba 1 para regresar al menú y 2 para salir.");
+            int reg = int.Parse(Console.ReadLine());
+            if (reg == 1)
+            {
+                otra_opcion();
+            }
+            else
+            {
+                Environment.Exit(0);
+            }
+
         }
         public static void ejercicio2()
         {
+            Console.WriteLine("***\t***\t Ejercicio 2 \t***\t*** \n");
+            int F = 0; int C = 0; int N = 0; int MI = 0; string linea;
+            Console.WriteLine("Tamaño de la matriz, haga el favor de ingresar un número impar:");
+            linea = Console.ReadLine();
+            N = int.Parse(linea);
+            N = (N % 2 == 0 ? N + 1 : N);
+            string[,] MAT = new string[N + 1, N + 1];
+            Console.Clear();
+            for (F = 1; F <= N; F++)
+            {
+                for (C = 1; C <= N; C++)
+                {
+                    MAT[F, C] = " ";
+                }
+            }
+            MI = N / 2 + 1;
+            for (F = 1; F <= N; F++)
+            {
+                MAT[F, 1] = "|";
+                if (F < 5)
+                {
+                    MAT[F, N] = "/";
 
+                }
+                else if (N > 3)
+                {
+                    MAT[F, (N-2)] = "/";
+                    
+
+                }
+                MAT[MI, F] = "-";
+                MAT[1, (F-1)] = "-/";
+            }
+            for (F = 1; F <= N; F++)
+            {
+                for (C = 1; C <= N; C++)
+                {
+                    Console.SetCursorPosition(C, F);
+                    Console.Write(MAT[F, C]);
+                }
+            }
+            Console.WriteLine();
+            
         }
         public static void ejercicio3()
         {
