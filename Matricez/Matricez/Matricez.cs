@@ -112,7 +112,6 @@ namespace Matricez
             {
                 Environment.Exit(0);
             }
-
         }
         public static void ejercicio3()
         {
@@ -163,10 +162,45 @@ namespace Matricez
             }
             Console.WriteLine("El mayor número en la matriz es:" + mayor);
             Console.WriteLine("El menor número en la matriz es:" + menor);
+            Console.WriteLine("\n\nEscriba 1 para regresar al menú y 2 para salir.");
+            int reg = int.Parse(Console.ReadLine());
+            if (reg == 1)
+            {
+                otra_opcion();
+            }
+            else
+            {
+                Environment.Exit(0);
+            }
         }
         public static void ejercicio4()
         {
-
+            int mayor;
+            Console.WriteLine("***\t***\t Ejercicio 3 \t***\t*** \n");
+            Console.WriteLine("Indique el número de filas:");
+            int filas = int.Parse(Console.ReadLine());
+            Console.WriteLine("Indique el número de columnas:");
+            int colmnas = int.Parse(Console.ReadLine());
+            int[,] numero = new int[filas, colmnas];
+            Console.WriteLine("");
+            for (int f = 0; f < filas; f++)
+            {
+                for (int c = 0; c < colmnas; c++)
+                {
+                    for (int x = 0; x < 2; x++)
+                    {
+                        for (int y = 0; y < 2; y++)
+                        {
+                            if (numero[f, c] > m[x, y])
+                            {
+                                mayor = m[f, c];
+                                m[f, c] = m[x, y];
+                                m[x, y] = mayor;
+                            }
+                        }
+                    }
+                }
+            }
         }
         public static void ejercicio5()
         {
