@@ -66,7 +66,7 @@ namespace Matricez
             linea = Console.ReadLine();
             N = int.Parse(linea);
             N = (N % 2 == 0 ? N + 1 : N);
-            string[,] MAT = new string[N + 32, N + 32];
+            string[,] MAT = new string[N + 1, N + 1];
             Console.Clear();
             for (F = 1; F <= N; F++)
             {
@@ -116,7 +116,53 @@ namespace Matricez
         }
         public static void ejercicio3()
         {
+            int filas, colmnas;
+            int mayor, menor;
 
+            Console.WriteLine("***\t***\t Ejercicio 3 \t***\t*** \n");
+            Console.WriteLine("Indique el número de filas:");
+            filas = int.Parse(Console.ReadLine());
+            Console.WriteLine("Indique el número de columnas:");
+            colmnas = int.Parse(Console.ReadLine());
+            int[,] numero = new int[filas + 2, colmnas + 2];
+            Console.WriteLine("");
+            for (int i = 0; i < filas; i++)
+            {
+                for (int j = 0; j < colmnas; j++)
+                {
+                    Console.WriteLine("Ingresa un número:");
+                    numero[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+            Console.Clear();
+            Console.Write("Los elementos que conforman la matriz son:");
+            for (int i = 0; i < filas; i++)
+            {
+                Console.WriteLine("  ");
+                for (int j = 0; j < colmnas; j++)
+                {
+                    Console.Write("\t" + numero[i, j]);
+                }
+            }
+            Console.WriteLine(" ");
+            mayor = menor = numero[0, 0];
+            for (int i = 0; i < filas; i++)
+            {
+                for (int j = 0; j < colmnas; j++)
+                {
+                    if (numero[i, j] < menor)
+                    {
+                        menor = numero[i, j];
+                    }
+                    else
+                        if (numero[i, j] > mayor)
+                    {
+                        mayor = numero[i, j];
+                    }
+                }
+            }
+            Console.WriteLine("El mayor número en la matriz es:" + mayor);
+            Console.WriteLine("El menor número en la matriz es:" + menor);
         }
         public static void ejercicio4()
         {
