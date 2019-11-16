@@ -56,17 +56,17 @@ namespace Matricez
             {
                 Environment.Exit(0);
             }
-
         }
         public static void ejercicio2()
         {
             Console.WriteLine("***\t***\t Ejercicio 2 \t***\t*** \n");
             int F = 0; int C = 0; int N = 0; int MI = 0; string linea;
+            int I;
             Console.WriteLine("Tamaño de la matriz, haga el favor de ingresar un número impar:");
             linea = Console.ReadLine();
             N = int.Parse(linea);
             N = (N % 2 == 0 ? N + 1 : N);
-            string[,] MAT = new string[N + 1, N + 1];
+            string[,] MAT = new string[N + 32, N + 32];
             Console.Clear();
             for (F = 1; F <= N; F++)
             {
@@ -78,20 +78,18 @@ namespace Matricez
             MI = N / 2 + 1;
             for (F = 1; F <= N; F++)
             {
-                MAT[F, 1] = "|";
-                if (F < 5)
+                MAT[F, 1] = "*";
+                if (F <= (N/2))
                 {
-                    MAT[F, N] = "/";
-
+                    MAT[F, N] = "*";
                 }
-                else if (N > 3)
+                else if (F > (N/2))
                 {
-                    MAT[F, (N-2)] = "/";
-                    
-
+                    I = N - F;
+                    MAT[F, (N-I)] = "*";
                 }
-                MAT[MI, F] = "-";
-                MAT[1, (F-1)] = "-/";
+                MAT[MI, F] = "*";
+                MAT[1, F] = "*";
             }
             for (F = 1; F <= N; F++)
             {
@@ -99,10 +97,22 @@ namespace Matricez
                 {
                     Console.SetCursorPosition(C, F);
                     Console.Write(MAT[F, C]);
+
                 }
             }
             Console.WriteLine();
-            
+            Console.Write("\n");
+            Console.WriteLine("\n\nEscriba 1 para regresar al menú y 2 para salir.");
+            int reg = int.Parse(Console.ReadLine());
+            if (reg == 1)
+            {
+                otra_opcion();
+            }
+            else
+            {
+                Environment.Exit(0);
+            }
+
         }
         public static void ejercicio3()
         {
