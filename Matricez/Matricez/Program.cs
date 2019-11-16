@@ -14,7 +14,7 @@ namespace Matricez
                 + "Tenemos una serie de opciones a realizar: \n"
                 + "\t1) Empleados y sueldo. \n"
                 + "\t2) Formar la letra R en una matriz de NxN. \n"
-                + "\t3) Número mayor y menor en una matriz de NxN. \n"
+                + "\t3) Número mayor y me231651631nor en una matriz de NxN. \n"
                 + "\t4) Ordenamiento de una matriz de NxN. \n"
                 + "\t5) Menores de cada columna de una matriz NxN en un vector. \n"
                 + "\t6) Mayores de cada fila de una matriz NxN en un vector. \n"
